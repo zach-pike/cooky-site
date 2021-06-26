@@ -10,11 +10,18 @@
 
 <style>
     .GameTitle {
-        color: white;
+        color: #eee;
     }
 
     .GameContainer {
         padding: 5%;
+    }
+
+    .markdown {
+        color: black;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        overflow-y: auto;
+        max-height: 73vh;
     }
 </style>
 

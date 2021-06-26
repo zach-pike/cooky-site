@@ -8,27 +8,9 @@
         display: flex;
     }
 
-    .GameCard {
-        width: 15%;
-        height: 30%;
-        padding: 0;
-        background-color: #eee;
-    }
-
-    .GameCard > .GameCardBody {
-        word-wrap: break-word;
-        padding: 5px;
-
-        height: 100%;
-    }
-
-    .GameCardBody > header {
-        font-size: 25px;
-    }
-
-    .GameCard > footer {
-        margin-top: auto;
-        padding: 8px;
+    .MobileGameCardContainer {
+        display: flex;
+        justify-content: center;
     }
 </style>
 
@@ -43,33 +25,44 @@
         games = [...games, { "title": gameName, "description": data[gameName].desciption }]
     })
 
+    import { breakpoint } from "./mediaquery.svelte"
     import { Link } from "svelte-navigator"
+    import GameCard from "./GameCard.svelte"
+
+    breakpoint.subscribe((size) => {
+        console.log(size)
+    })
 </script>
 
 <div class="Games">
 
-    <h1>Games we have made</h1>
+    {#if $breakpoint < 3}
+        <h1 style="text-align: center;">Games we have made</h1>
+        {:else}
+        <h1>Games we have made</h1>
+    {/if}
 
-    <div class="GameCardContainer">
+    {#if $breakpoint < 3}
+        <div class="MobileGameCardContainer">
 
-        {#each games as game}
-            <div class="GameCard">
-                <img src="/resources/placeholder.jpg" width="100%" alt="Logo" />
+            {#each games as game}
+                <GameCard gameName="{game.title}"
+                        description="{game.description}" 
+                        imageURL="/resources/placeholder.jpg"
+                />
+            {/each}
 
-                <div class="GameCardBody">
+        </div>
+        {:else}
+        <div class="GameCardContainer">
 
-                    <header>{game.title}</header>
+            {#each games as game}
+                <GameCard gameName="{game.title}"
+                        description="{game.description}" 
+                        imageURL="/resources/placeholder.jpg"
+                />
+            {/each}
 
-                    <p>{game.description}</p>
-                    
-                </div>
-
-                <footer>
-                    <Link to="{`/games/${game.title}`}">See More about {game.title}</Link>
-                </footer>
-
-            </div>
-        {/each}
-
-    </div>
+        </div>
+    {/if}
 </div>

@@ -1,6 +1,6 @@
-### DogeFighters
-funny wacky dog do unpredictable and un charisterictic thing
+### Dogelore TCG
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at nibh eget magna ornare euismod. Nunc feugiat viverra ipsum, ut condimentum sem posuere a. Mauris sodales purus a egestas dignissim. In ac gravida orci. Curabitur semper lacus nec dui malesuada, ac blandit magna pharetra. Nam sed est ac eros lacinia elementum. Phasellus pulvinar justo ac risus tincidunt rutrum. Donec maximus, lorem et vestibulum lobortis, felis justo bibendum erat, sit amet sagittis nibh turpis non erat. Ut a dolor ac metus laoreet tempus. Sed a elit et leo ultricies lobortis nec tristique erat. Nam quis velit dignissim, malesuada justo faucibus, dignissim magna. Donec at nunc eu dolor sollicitudin suscipit eget tempus lorem. Praesent pellentesque rutrum velit.
 
-why good game
+Sed rutrum sit amet arcu sed vehicula. Sed ornare luctus risus sed faucibus. Praesent congue tellus id tellus tristique, in dignissim nibh aliquam. Integer at mauris dictum neque congue laoreet. Sed vestibulum euismod lacus a commodo. Curabitur vestibulum vitae erat eget laoreet. Quisque eu sapien posuere, blandit ex ac, laoreet sem. Duis aliquet, arcu at euismod placerat, velit sem aliquet nisi, sed maximus felis nisl non sapien. In rhoncus euismod purus, eu blandit magna scelerisque eu. Nullam vestibulum sapien id tellus finibus finibus. Nunc sed ipsum eget ex hendrerit pretium.
 
- - dog sussy
+![Gameplay](/resources/placeholder.jpg)

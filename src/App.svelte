@@ -8,6 +8,14 @@
 	import Homepage from "./Homepage.svelte"
 	import Games from "./Games.svelte"
 	import GamePage from "./GamePage.svelte"
+
+	let str = ""
+
+	document.onkeydown = (e) => {
+		if (e.code.includes("Key")) {
+			str += e.code.replace("Key", "").toLowerCase()
+		}
+	}
 </script>
 
 <style>
@@ -23,16 +31,32 @@
 	}
 
 	.blur {
-		background: rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.158);
 		backdrop-filter: blur(8px);
 		height: 100vh;
 		width: 100%;
+	}
+
+	.Container {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 100vw;
+		height: 100vh;
 	}
 </style>
 
 <div class="background">
 	<div class="blur"></div>
 </div>
+
+{#if str.includes("sus")}
+	<div class="Container" on:click="{() => str = ""}">
+			<img src="/resources/amogus.png" alt="amogus" width="300" />
+	</div>
+{/if}
 
 <Router>
 	<!-- Homepage Route -->

@@ -47,12 +47,6 @@
                 <Link to="about">About</Link>
             </div>
         </li>
-        
-        <li>
-            <div class="Link">
-                <Link to="games/test1234/about">About</Link>
-            </div>
-        </li>
 
     </ul>
 </div>
